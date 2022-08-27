@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/logoalura.png" alt="Logo de Alura con la inicial de letra a">
+    </header>
+    <main>
+        <section>
+            <div>
+                <textarea class="input-texto" placeholder=" Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="informacion">
+                <!-- Icono de 'Información' -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                <h6>Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+           
+        </section>
+        <section>
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <p class="texto-superior">Ningún mensaje fue encontrado</p>
+            <p class="texto-inferior">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="copiar" onclick="btnCopiar()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p class="powered">Powered by Génesys Rondón and Raúl Rivera</p>
+    </footer>
+    <script src="script.js"></script> 
+    </body>
+</html>
